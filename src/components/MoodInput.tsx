@@ -13,7 +13,7 @@ const MoodInput = ({mood, setMood, onGenerate, disabled}:Props) => {
         <div className='space-y-4 '>
             <div>
                 <Input
-                    placeholder='How are you feeling today'
+                    placeholder='How are you feeling today ? (Happy , Sad or Angry...)'
                     value={mood}
                     onChange={(e) => setMood(e.target.value)}
                     disabled={disabled}
@@ -21,7 +21,7 @@ const MoodInput = ({mood, setMood, onGenerate, disabled}:Props) => {
             </div>
 
             <Button className='w-full' onClick={() => onGenerate()} disabled={disabled}>
-                Genarate emoji
+                Genarate Mail
             </Button>
         </div>
     )
